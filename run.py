@@ -1023,7 +1023,13 @@ def configure_generic_provider(provider_name):
     
     # Provider-specific model options (updated to current 2026 models)
     provider_models = {
-        "openai": ["gpt-5.4", "gpt-5.4-pro", "gpt-5-mini", "gpt-4o"],
+        "openai": [
+            "gpt-5.4", "gpt-5.4-pro", "gpt-5-mini", "gpt-5-nano", "gpt-5", "gpt-5-pro", "gpt-5.1", "gpt-5.2", "gpt-5.2-pro",
+            "gpt-4.1", "gpt-4.1-nano", "gpt-4.1-mini", "gpt-4o", "gpt-4o-mini", "gpt-4o-search-preview", "gpt-4o-mini-search", "gpt-4.5-preview",
+            "o1", "o1-mini", "o1-pro", "o3", "o3-mini", "o3-pro", "o4-mini",
+            "gpt-5-codex", "gpt-5.1-codex", "gpt-5.1-codex-max", "gpt-5.1-codex-mini", "gpt-5.2-codex", "gpt-5.3-codex",
+            "gpt-oss-20b", "gpt-oss-120b", "computer-use-preview", "omni-moderation-v1"
+        ],
         "anthropic": ["claude-opus-4.6", "claude-sonnet-4.6", "claude-sonnet-4.5"],
         "xai": ["grok-4.20", "grok-4.20-beta"],
         "meta": ["llama-4-scout-17b", "meta-llama-3.1-405b-instruct"],
@@ -1097,10 +1103,51 @@ def select_model_with_arrows(provider_name: str, models: list) -> Optional[str]:
     
     # Add models to menu with descriptions
     model_descriptions = {
-        "gpt-5.4": "Latest GPT-5.4 • Flagship • Advanced reasoning & coding",
+        # GPT-5 Series
+        "gpt-5.4": "GPT-5.4 • Flagship • Advanced reasoning & coding",
         "gpt-5.4-pro": "GPT-5.4 Pro • Professional tier • Enhanced capabilities",
         "gpt-5-mini": "GPT-5 Mini • Cost-optimized • Fast inference",
+        "gpt-5-nano": "GPT-5 Nano • Ultra-lightweight • Edge devices",
+        "gpt-5": "GPT-5 • Standard • Advanced capabilities",
+        "gpt-5-pro": "GPT-5 Pro • Professional • Enhanced features",
+        "gpt-5.1": "GPT-5.1 • Stable • Reliable performance",
+        "gpt-5.2": "GPT-5.2 • Enhanced • Improved reasoning",
+        "gpt-5.2-pro": "GPT-5.2 Pro • Professional • Advanced features",
+        
+        # GPT-4 Series
+        "gpt-4.1": "GPT-4.1 • Enhanced • Improved reasoning",
+        "gpt-4.1-nano": "GPT-4.1 Nano • Ultra-lightweight • Edge devices",
+        "gpt-4.1-mini": "GPT-4.1 Mini • Lightweight • Efficient",
         "gpt-4o": "GPT-4 Omni • Multimodal • Strong capabilities",
+        "gpt-4o-mini": "GPT-4o Mini • Multimodal • Cost-effective",
+        "gpt-4o-search-preview": "GPT-4o Search • Enhanced search • Preview",
+        "gpt-4o-mini-search": "GPT-4o Mini Search • Cost search • Efficient",
+        "gpt-4.5-preview": "GPT-4.5 Preview • Next-gen • Advanced features",
+        
+        # Reasoning Models
+        "o1": "O1 • Advanced reasoning • Complex problem solving",
+        "o1-mini": "O1 Mini • Lightweight reasoning • Fast inference",
+        "o1-pro": "O1 Pro • Professional reasoning • Enhanced capabilities",
+        "o3": "O3 • Advanced reasoning • Latest generation",
+        "o3-mini": "O3 Mini • Lightweight reasoning • Efficient",
+        "o3-pro": "O3 Pro • Professional reasoning • Advanced features",
+        "o4-mini": "O4 Mini • Next-gen reasoning • Ultra-efficient",
+        
+        # Code Models
+        "gpt-5-codex": "GPT-5 Codex • Code generation • Advanced analysis",
+        "gpt-5.1-codex": "GPT-5.1 Codex • Code generation • Optimized",
+        "gpt-5.1-codex-max": "GPT-5.1 Codex Max • Maximum capability • Professional",
+        "gpt-5.1-codex-mini": "GPT-5.1 Codex Mini • Lightweight code • Fast",
+        "gpt-5.2-codex": "GPT-5.2 Codex • Enhanced code • Advanced features",
+        "gpt-5.3-codex": "GPT-5.3 Codex • Latest code • Advanced generation",
+        
+        # Specialized Models
+        "gpt-oss-20b": "GPT-OSS 20B • Open source • 20B parameters",
+        "gpt-oss-120b": "GPT-OSS 120B • Open source • 120B parameters",
+        "computer-use-preview": "Computer Use • Agent capabilities • Preview",
+        "omni-moderation-v1": "Omni Moderation • Content safety • Enterprise",
+        
+        # Other providers
         "claude-opus-4.6": "Claude Opus 4.6 • Most advanced • Complex reasoning",
         "claude-sonnet-4.6": "Claude Sonnet 4.6 • Latest • Near-Opus performance",
         "claude-sonnet-4.5": "Claude Sonnet 4.5 • Enterprise • B2B workflows",
