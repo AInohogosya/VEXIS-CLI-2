@@ -107,7 +107,8 @@ pip install openai
 **Latest Models:**
 - `gpt-5.4` (default) - Latest flagship
 - `gpt-5.4-pro` - Research-grade
-- `gpt-5.4-mini` - Efficient reasoning
+- `gpt-5.4-mini` (New) - Cost-optimized reasoning
+- `gpt-5.4-nano` (New) - Ultra-lightweight
 - `gpt-4o` - Multimodal
 
 **Features:**
@@ -214,7 +215,9 @@ pip install openai
 **Latest Models:**
 - `gpt-5.4` (default) - Latest flagship
 - `gpt-5.4-pro` - Research-grade
-- `gpt-5.4-mini` - Efficient
+- `gpt-5.4-mini` (New) - Cost-optimized
+- `gpt-5.4-nano` (New) - Ultra-lightweight
+- `gpt-4o` - Powerful general purpose
 
 **Features:**
 - Enterprise-grade

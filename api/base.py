@@ -351,6 +351,8 @@ def _estimate_cost(provider: str, model: str, prompt_tokens: int, completion_tok
         "openai": {
             "gpt-5.4": (5.00, 20.0),  # Latest GPT-5 pricing
             "gpt-5.4-pro": (7.50, 30.0),  # Professional tier
+            "gpt-5.4-mini": (0.50, 2.00),  # Cost-optimized
+            "gpt-5.4-nano": (0.25, 1.00),  # Ultra-lightweight
             "gpt-5-mini": (0.50, 2.00),
             "gpt-4o": (2.50, 10.0),
             "gpt-4o-mini": (0.15, 0.60),

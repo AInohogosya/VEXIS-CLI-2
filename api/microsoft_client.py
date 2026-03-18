@@ -53,6 +53,7 @@ class MicrosoftLLMClient(BaseLLM):
         "gpt-5.4": 1_048_576,
         "gpt-5.4-pro": 1_048_576,
         "gpt-5.4-mini": 400_000,
+        "gpt-5.4-nano": 200_000,
         "gpt-4o": 128_000,
         "gpt-4o-mini": 128_000,
     }
@@ -239,13 +240,22 @@ class MicrosoftLLMClient(BaseLLM):
                 description="Professional GPT-5.4 with enhanced capabilities"
             ),
             ModelInfo(
+                id="gpt-5.4-nano",
+                name="GPT-5.4 Nano",
+                provider="microsoft",
+                context_window=200_000,
+                max_output_tokens=32_768,
+                supports_vision=False,
+                description="Ultra-lightweight model for edge devices"
+            ),
+            ModelInfo(
                 id="gpt-5.4-mini",
                 name="GPT-5.4 Mini",
                 provider="microsoft",
                 context_window=400_000,
                 max_output_tokens=32_768,
-                supports_vision=True,
-                description="Efficient reasoning model"
+                supports_vision=False,
+                description="Efficient model for cost-effective inference"
             ),
             ModelInfo(
                 id="gpt-4o",

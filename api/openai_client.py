@@ -73,6 +73,8 @@ class OpenAILLMClient(BaseLLM):
     MODEL_CONTEXT_WINDOWS = {
         "gpt-5.4": 1_048_576,
         "gpt-5.4-pro": 1_048_576,
+        "gpt-5.4-mini": 400_000,
+        "gpt-5.4-nano": 200_000,
         "gpt-5-mini": 1_048_576,
         "gpt-4o": 128_000,
         "gpt-4o-mini": 128_000,
@@ -83,15 +85,17 @@ class OpenAILLMClient(BaseLLM):
     MODEL_MAX_TOKENS = {
         "gpt-5.4": 32_768,
         "gpt-5.4-pro": 32_768,
+        "gpt-5.4-mini": 16_384,
+        "gpt-5.4-nano": 8_192,
         "gpt-5-mini": 16_384,
         "gpt-4o": 16_384,
         "gpt-4o-mini": 16_384,
-        "gpt-4": 8_192,
+        "gpt-4": 4_096,
     }
     
     # Vision-capable models
     VISION_MODELS = {
-        "gpt-5.4", "gpt-5.4-pro", "gpt-5-mini", "gpt-4o", "gpt-4o-mini",
+        "gpt-5.4", "gpt-5.4-pro", "gpt-5-mini", "gpt-5.4-mini", "gpt-5.4-nano", "gpt-4o", "gpt-4o-mini",
     }
     
     # Reasoning models (use different parameter handling)

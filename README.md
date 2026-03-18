@@ -113,7 +113,7 @@ api:
 
 **Model Recommendations:**
 - **Stable**: `gemma3:4b`, `qwen2.5:3b`, `deepseek-r1:7b`
-- **Latest**: `gemini-3.1-pro`, `gpt-5.4`, `claude-opus-4.6`
+- **Latest**: `gemini-3.1-pro`, `gpt-5.4`, `gpt-5.4-mini (New)`, `gpt-5.4-nano (New)`, `claude-opus-4.6`
 - **Cloud**: Google Gemini 3.1 Pro (most reliable)
 
 > 📖 **For detailed configuration options**, see our [Configuration Guide](./docs/CONFIGURATION.md) and [Detailed User Guide](./DETAILED_GUIDE.md).

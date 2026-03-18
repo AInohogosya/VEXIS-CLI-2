@@ -48,7 +48,7 @@ api:
   
   # OpenAI Configuration
   openai_api_key: null  # Set via environment variable or here
-  openai_model: "gpt-5.4"
+  openai_model: "gpt-5.4"  # Options: gpt-5.4, gpt-5.4-pro, gpt-5.4-mini (New), gpt-5.4-nano (New), gpt-4o
   
   # Anthropic Configuration
   anthropic_api_key: null  # Set via environment variable or here

@@ -1024,7 +1024,7 @@ def configure_generic_provider(provider_name):
     # Provider-specific model options (updated to current 2026 models)
     provider_models = {
         "openai": [
-            "gpt-5.4", "gpt-5.4-pro", "gpt-5-mini", "gpt-5-nano", "gpt-5", "gpt-5-pro", "gpt-5.1", "gpt-5.2", "gpt-5.2-pro",
+            "gpt-5.4-mini (New)", "gpt-5.4-nano (New)", "gpt-5.4", "gpt-5.4-pro", "gpt-5-mini", "gpt-5-nano", "gpt-5", "gpt-5-pro", "gpt-5.1", "gpt-5.2", "gpt-5.2-pro",
             "gpt-4.1", "gpt-4.1-nano", "gpt-4.1-mini", "gpt-4o", "gpt-4o-mini", "gpt-4o-search-preview", "gpt-4o-mini-search", "gpt-4.5-preview",
             "o1", "o1-mini", "o1-pro", "o3", "o3-mini", "o3-pro", "o4-mini",
             "gpt-5-codex", "gpt-5.1-codex", "gpt-5.1-codex-max", "gpt-5.1-codex-mini", "gpt-5.2-codex", "gpt-5.3-codex",
@@ -1104,6 +1104,8 @@ def select_model_with_arrows(provider_name: str, models: list) -> Optional[str]:
     # Add models to menu with descriptions
     model_descriptions = {
         # GPT-5 Series
+        "gpt-5.4-mini (New)": "GPT-5.4 Mini • New • Cost-optimized • Fast inference",
+        "gpt-5.4-nano (New)": "GPT-5.4 Nano • New • Ultra-lightweight • Edge devices",
         "gpt-5.4": "GPT-5.4 • Flagship • Advanced reasoning & coding",
         "gpt-5.4-pro": "GPT-5.4 Pro • Professional tier • Enhanced capabilities",
         "gpt-5-mini": "GPT-5 Mini • Cost-optimized • Fast inference",
@@ -1173,7 +1175,12 @@ def select_model_with_arrows(provider_name: str, models: list) -> Optional[str]:
     # Add each model to the menu
     for model in models:
         description = model_descriptions.get(model, f"{model} • Standard model")
-        icon = "🚀" if "latest" in description.lower() or "newest" in description.lower() else "🧠"
+        if "new" in description.lower():
+            icon = "✨"  # Special icon for new models
+        elif "latest" in description.lower() or "newest" in description.lower():
+            icon = "🚀"
+        else:
+            icon = "🧠"
         menu.add_item(model, description, model, icon)
     
     selected_model = menu.show()
