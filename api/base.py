@@ -27,6 +27,7 @@ class ProviderType(Enum):
     DEEPSEEK = "deepseek"
     TOGETHER = "together"
     MINIMAX = "minimax"
+    ZHIPUAI = "zhipuai"
 
 
 class ResponseFormat(Enum):

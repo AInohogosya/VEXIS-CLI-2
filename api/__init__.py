@@ -111,6 +111,11 @@ try:
 except ImportError as e:
     MiniMaxLLMClient = None  # type: ignore
 
+try:
+    from .zhipuai_client import ZhipuAILLMClient
+except ImportError as e:
+    ZhipuAILLMClient = None  # type: ignore
+
 
 # Register providers with factory
 if GoogleLLMClient:
@@ -152,6 +157,9 @@ if TogetherLLMClient:
 if MiniMaxLLMClient:
     LLMFactory.register(ProviderType.MINIMAX, MiniMaxLLMClient)
 
+if ZhipuAILLMClient:
+    LLMFactory.register(ProviderType.ZHIPUAI, ZhipuAILLMClient)
+
 
 __all__ = [
     # Base classes
@@ -177,6 +185,7 @@ __all__ = [
     "GroqLLMClient",
     "TogetherLLMClient",
     "MiniMaxLLMClient",
+    "ZhipuAILLMClient",
 ]
 
 
@@ -224,6 +233,9 @@ def create_client(
         "groq": ProviderType.GROQ,
         "together": ProviderType.TOGETHER,
         "minimax": ProviderType.MINIMAX,
+        "zhipuai": ProviderType.ZHIPUAI,
+        "zhipu": ProviderType.ZHIPUAI,
+        "glm": ProviderType.ZHIPUAI,
     }
     
     provider_type = provider_map.get(provider.lower())
@@ -241,5 +253,5 @@ def get_available_providers() -> list:
     return [
         "google", "openai", "anthropic", "xai", "meta", 
         "mistral", "microsoft", "amazon", "cohere", 
-        "deepseek", "groq", "together", "minimax"
+        "deepseek", "groq", "together", "minimax", "zhipuai"
     ]

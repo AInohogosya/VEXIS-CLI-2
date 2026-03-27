@@ -503,8 +503,9 @@ MODEL_FAMILIES = {
                 "description": "Strong reasoning and agentic model with 744B total parameters",
                 "icon": "🚀",
                 "models": {
-                    "glm-5:cloud": {"name": "GLM-5 Cloud", "desc": "744B total parameters • 40B active • Cloud only", "icon": "👑"},
-                    "glm-5-turbo": {"name": "GLM-5-Turbo (New)", "desc": "OpenClaw Native • Tool invocation • Agent tasks", "icon": "⚡"},
+                    "glm-5": {"name": "GLM-5", "desc": "744B total parameters • 40B active • 128K context • Official API", "icon": "👑"},
+                    "glm-5:cloud": {"name": "GLM-5 Cloud", "desc": "744B total parameters • 40B active • Cloud only", "icon": "☁️"},
+                    "glm-5-turbo": {"name": "GLM-5-Turbo", "desc": "Efficient variant • Tool invocation • Agent tasks", "icon": "⚡"},
                 }
             }
         }

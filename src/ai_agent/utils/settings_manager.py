@@ -406,7 +406,7 @@ class SettingsManager:
         """Set preferred provider"""
         valid_providers = ["ollama", "google", "groq", "openai", "anthropic", 
                           "xai", "meta", "mistral", "microsoft", "amazon", 
-                          "cohere", "deepseek", "together", "minimax"]
+                          "cohere", "deepseek", "together", "minimax", "zhipuai"]
         if provider not in valid_providers:
             raise ValueError(f"Provider must be one of: {valid_providers}")
         self._settings.preferred_provider = provider
@@ -428,7 +428,8 @@ class SettingsManager:
             "cohere": "cohere_api_key",
             "deepseek": "deepseek_api_key",
             "together": "together_api_key",
-            "minimax": "minimax_api_key"
+            "minimax": "minimax_api_key",
+            "zhipuai": "zhipuai_api_key"
         }
         
         if provider not in provider_key_map:
@@ -454,7 +455,8 @@ class SettingsManager:
             "cohere": "cohere_model",
             "deepseek": "deepseek_model",
             "together": "together_model",
-            "minimax": "minimax_model"
+            "minimax": "minimax_model",
+            "zhipuai": "zhipuai_model"
         }
         
         if provider not in provider_model_map:
@@ -479,7 +481,8 @@ class SettingsManager:
             "cohere": "cohere_api_key",
             "deepseek": "deepseek_api_key",
             "together": "together_api_key",
-            "minimax": "minimax_api_key"
+            "minimax": "minimax_api_key",
+            "zhipuai": "zhipuai_api_key"
         }
         
         if provider not in provider_key_map:
@@ -502,7 +505,8 @@ class SettingsManager:
             "cohere": "cohere_model",
             "deepseek": "deepseek_model",
             "together": "together_model",
-            "minimax": "minimax_model"
+            "minimax": "minimax_model",
+            "zhipuai": "zhipuai_model"
         }
         
         if provider not in provider_model_map:

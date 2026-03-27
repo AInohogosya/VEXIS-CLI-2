@@ -128,6 +128,8 @@ class MultiProviderVisionAPIClient:
             'deepseek': ProviderType.DEEPSEEK,
             'groq': ProviderType.GROQ,
             'together': ProviderType.TOGETHER,
+            'minimax': ProviderType.MINIMAX,
+            'zhipuai': ProviderType.ZHIPUAI,
         }
         
         for provider_name, provider_type in provider_mappings.items():
@@ -191,6 +193,8 @@ class MultiProviderVisionAPIClient:
                                     'deepseek': ProviderType.DEEPSEEK,
                                     'groq': ProviderType.GROQ,
                                     'together': ProviderType.TOGETHER,
+                                    'minimax': ProviderType.MINIMAX,
+                                    'zhipuai': ProviderType.ZHIPUAI,
                                 }
                                 
                                 if provider in provider_mappings:
