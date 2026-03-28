@@ -86,6 +86,12 @@ PROVIDER_SDKS = {
         "import_name": "openai",
         "install_command": "pip install openai",
         "description": "Together AI models (uses OpenAI SDK)"
+    },
+    "zhipuai": {
+        "package": "openai",  # ZhipuAI uses OpenAI-compatible API
+        "import_name": "openai",
+        "install_command": "pip install openai",
+        "description": "Z.ai/ZhipuAI GLM models (uses OpenAI SDK)"
     }
 }
 

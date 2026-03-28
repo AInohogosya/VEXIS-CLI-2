@@ -987,6 +987,13 @@ def select_model_provider():
         "🚀"
     )
     
+    menu.add_item(
+        "Z.ai/ZhipuAI (Beta)",
+        "Use Z.ai's GLM models • Requires API key • https://z.ai",
+        "zhipuai",
+        "🌐"
+    )
+    
     selected_provider = menu.show()
     
     if selected_provider is None:
@@ -1018,7 +1025,7 @@ def select_model_provider():
         show_config_summary(provider, model)
         return "google"
         
-    elif selected_provider in ["openai", "anthropic", "xai", "meta", "groq", "deepseek", "together", "microsoft", "mistral", "amazon", "cohere", "minimax"]:
+    elif selected_provider in ["openai", "anthropic", "xai", "meta", "groq", "deepseek", "together", "microsoft", "mistral", "amazon", "cohere", "minimax", "zhipuai"]:
         # Generic handler for all other providers
         provider, model = configure_generic_provider(selected_provider)
         if provider is None:
@@ -1065,7 +1072,8 @@ def configure_generic_provider(provider_name):
         "mistral": ["mistral-large-2411", "mistral-small-2409"],
         "amazon": ["anthropic.claude-opus-4.6-v1:0", "anthropic.claude-sonnet-4.6-v1:0"],
         "cohere": ["command-r-plus-08-2024", "command-r-08-2024"],
-        "minimax": ["minimax-m2.7 (Latest)", "minimax-m2.5", "minimax-m2 (Legacy)"]
+        "minimax": ["minimax-m2.7 (Latest)", "minimax-m2.5", "minimax-m2 (Legacy)"],
+        "zhipuai": ["glm-5", "glm-5-turbo", "glm-4.7", "glm-4"]
     }
     
     # API key environment variables
@@ -1081,7 +1089,8 @@ def configure_generic_provider(provider_name):
         "mistral": "MISTRAL_API_KEY",
         "amazon": "AWS_ACCESS_KEY_ID",
         "cohere": "COHERE_API_KEY",
-        "minimax": "MINIMAX_API_KEY"
+        "minimax": "MINIMAX_API_KEY",
+        "zhipuai": "ZHIPUAI_API_KEY"
     }
     
     info_message(f"🔑 Configuring {provider_name.upper()} Provider")
