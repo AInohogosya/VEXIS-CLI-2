@@ -1,4 +1,4 @@
-# VEXIS-CLI-2.0 Detailed User Guide
+# VEXIS-CLI-2 Detailed User Guide
 
 ## Table of Contents
 
@@ -15,9 +15,9 @@
 
 ## Getting Started
 
-### What is VEXIS-CLI-2.0?
+### What is VEXIS-CLI-2?
 
-VEXIS-CLI-2.0 is an intelligent command-line agent that transforms natural language instructions into executable terminal commands. It supports multiple AI providers and offers both local (privacy-first) and cloud-based options.
+VEXIS-CLI-2 is an intelligent command-line agent that transforms natural language instructions into executable terminal commands. It supports multiple AI providers and offers both local (privacy-first) and cloud-based options.
 
 ### Key Features
 
@@ -53,10 +53,7 @@ cd VEXIS-CLI-2
 python3 -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-# 3. Install dependencies
-pip install -r requirements.txt
-
-# 4. Run the agent
+# 3. Run the agent
 python3 run.py "your instruction here"
 ```
 
@@ -248,7 +245,7 @@ Similar setup process for:
 
 ### Two-Phase Execution Engine
 
-VEXIS-CLI-2.0 uses a sophisticated two-phase execution:
+VEXIS-CLI-2 uses a sophisticated two-phase execution:
 
 1. **Command Planning Phase**:
    - Natural language understanding

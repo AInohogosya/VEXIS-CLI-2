@@ -2,7 +2,7 @@
 
 ## Overview
 
-VEXIS-CLI-2.0 is built on a 5-phase pipeline execution engine that processes natural language instructions and executes terminal operations with intelligent error handling and recovery mechanisms.
+VEXIS-CLI-2 is built on a 5-phase pipeline execution engine that processes natural language instructions and executes terminal operations with intelligent error handling and recovery mechanisms.
 
 ## Core Architecture
 
@@ -10,7 +10,7 @@ VEXIS-CLI-2.0 is built on a 5-phase pipeline execution engine that processes nat
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                    VEXIS-CLI-2.0 System                      │
+│                    VEXIS-CLI-2 System                       │
 ├─────────────────────────────────────────────────────────────┤
 │  Phase 1: Command Suggestion                              │
 │  ┌─────────────────┐  ┌─────────────────┐  ┌──────────────┐ │
@@ -103,7 +103,7 @@ async def execute_commands(self, commands: List[Command]) -> ExecutionResult
 **Architecture:**
 ```
 ┌─────────────────┐    HTTP/REST    ┌─────────────────┐
-│ VEXIS-CLI-2.0     │◄──────────────►│   Ollama        │
+│ VEXIS-CLI-2       │    HTTP/REST    │   Ollama        │
 │ Model Runner    │                │   Local Server  │
 └─────────────────┘                └─────────────────┘
         │                                   │
@@ -126,7 +126,7 @@ async def execute_commands(self, commands: List[Command]) -> ExecutionResult
 **Architecture:**
 ```
 ┌─────────────────┐    HTTPS/API    ┌─────────────────┐
-│ VEXIS-CLI-2.0     │◄──────────────►│ Google Cloud    │
+│ VEXIS-CLI-2       │    HTTPS/API    │ Google Cloud    │
 │ Model Runner    │                │   Gemini API    │
 └─────────────────┘                └─────────────────┘
         │                                   │

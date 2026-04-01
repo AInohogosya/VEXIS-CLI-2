@@ -2,7 +2,7 @@
 
 ## Overview
 
-VEXIS-CLI-2.0 uses a flexible configuration system that supports 16+ AI providers, customization options, and environment-specific settings. This guide covers all configuration aspects from basic setup to advanced customization.
+VEXIS-CLI-2 uses a flexible configuration system that supports 16+ AI providers, customization options, and environment-specific settings. This guide covers all configuration aspects from basic setup to advanced customization.
 
 ## Supported Providers
 
@@ -30,7 +30,7 @@ VEXIS-CLI-2.0 uses a flexible configuration system that supports 16+ AI provider
 **File**: `config.yaml`
 
 ```yaml
-# VEXIS-CLI-2.0 Configuration File
+# VEXIS-CLI-2 Configuration File
 # Version: 2.0.0
 
 # AI Provider Configuration
@@ -758,4 +758,4 @@ python3 run.py --test-providers
 3. **Validate Configs** before use
 4. **Monitor Configuration** changes
 
-This comprehensive configuration system provides flexibility while maintaining security and performance standards for VEXIS-CLI-2.0 deployments.
+This comprehensive configuration system provides flexibility while maintaining security and performance standards for VEXIS-CLI-2 deployments.

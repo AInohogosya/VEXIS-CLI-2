@@ -1,7 +1,7 @@
 
 <div align="center">
 
-# VEXIS-CLI-2.0
+# VEXIS-CLI-2
 
 ![VEXIS CLI image](VEXIS-CLI-2.png)
 
@@ -22,9 +22,9 @@
 
 ---
 
-## ✨ Why VEXIS-CLI-2.0?
+## ✨ Why VEXIS-CLI-2?
 
-**VEXIS-CLI-2.0** represents a quantum leap in command-line automation, featuring a sophisticated **5-Phase Pipeline Architecture** that delivers unprecedented accuracy and reliability in natural language to command translation.
+**VEXIS-CLI-2** represents a quantum leap in command-line automation, featuring a sophisticated **5-Phase Pipeline Architecture** that delivers unprecedented accuracy and reliability in natural language to command translation.
 
 🎯 **"Create a backup of my documents folder"** → Intelligent backup with verification  
 🎯 **"Find all Python files with syntax errors"** → Multi-stage code analysis with reporting  
