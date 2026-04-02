@@ -111,7 +111,7 @@ class CursesMenu:
                 self.current_index = max(0, self.current_index - 1)
             elif key == curses.KEY_DOWN:
                 self.current_index = min(len(self.items) - 1, self.current_index + 1)
-            elif key in [curses.KEY_ENTER, 10, 13]:  # Enter
+            elif key in [10, 13]:  # Enter key - ASCII newline (10) and carriage return (13)
                 return self.items[self.current_index]["value"]
             elif key in [ord('q'), ord('Q'), 27]:  # Q or ESC
                 return None
@@ -239,7 +239,7 @@ class CursesHierarchicalMenu:
             if key == 27:  # Escape key
                 curses.curs_set(0)
                 return None
-            elif key in [curses.KEY_ENTER, 10, 13]:
+            elif key in [10, 13]:  # Enter key - ASCII newline and carriage return
                 if not input_text.strip():
                     error_message = "Please enter a model name."
                     continue
@@ -288,7 +288,7 @@ class CursesHierarchicalMenu:
                 family_current = max(0, family_current - 1)
             elif key == curses.KEY_DOWN:
                 family_current = min(len(family_items) - 1, family_current + 1)
-            elif key in [curses.KEY_ENTER, 10, 13]:
+            elif key in [10, 13]:  # Enter key - ASCII newline and carriage return
                 return family_items[family_current][0]
     
     def _show_subfamily_selection(self, stdscr, family_key: str) -> Optional[str]:
@@ -330,7 +330,7 @@ class CursesHierarchicalMenu:
                 subfamily_current = min(len(subfamily_items) - 1, subfamily_current + 1)
             elif key == curses.KEY_LEFT or key == 26:  # Left arrow or Ctrl+Z
                 return "back"
-            elif key in [curses.KEY_ENTER, 10, 13]:
+            elif key in [10, 13]:  # Enter key - ASCII newline and carriage return
                 return subfamily_items[subfamily_current][0]
     
     def _show_model_selection(self, stdscr, family_key: str, subfamily_key: str) -> Optional[str]:
@@ -372,7 +372,7 @@ class CursesHierarchicalMenu:
                 model_current = min(len(model_items) - 1, model_current + 1)
             elif key == curses.KEY_LEFT or key == 26:  # Left arrow or Ctrl+Z
                 return "back"
-            elif key in [curses.KEY_ENTER, 10, 13]:
+            elif key in [10, 13]:  # Enter key - ASCII newline and carriage return
                 return model_items[model_current][0]
     
     def show(self) -> Optional[str]:
