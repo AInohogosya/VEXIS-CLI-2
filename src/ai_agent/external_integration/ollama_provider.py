@@ -33,7 +33,7 @@ class SimpleOllamaProvider:
         self.timeout = timeout
         self.logger = get_logger("ollama_provider")
 
-    def chat(self, prompt: str, model: Optional[str] = None, temperature: float = 1.0, max_tokens: int = 5000) -> OllamaResponse:
+    def chat(self, prompt: str, model: Optional[str] = None, temperature: float = 1.0, max_tokens: int = 5000, system_instructions: Optional[str] = None) -> OllamaResponse:
         """
         Send a chat request to Ollama.
 
@@ -42,6 +42,7 @@ class SimpleOllamaProvider:
             model: Model name (defaults to llama4-scout-17b)
             temperature: Sampling temperature
             max_tokens: Max tokens to generate
+            system_instructions: Optional system instructions to include
 
         Returns:
             OllamaResponse with success flag and content or error
@@ -97,10 +98,16 @@ class SimpleOllamaProvider:
                     if model_exists:
                         break
         
+        # Build messages array with proper system instruction support
+        messages = []
+        if system_instructions:
+            messages.append({"role": "system", "content": system_instructions})
+        messages.append({"role": "user", "content": prompt})
+        
         # Define payload first (needed for task type detection)
         payload = {
             "model": model,
-            "messages": [{"role": "user", "content": prompt}],
+            "messages": messages,
             "stream": False,
             "options": {
                 "temperature": temperature,

@@ -100,7 +100,8 @@ class VisionAPIClient:
             prompt=request.prompt,
             model=model,
             temperature=request.temperature,
-            max_tokens=request.max_tokens
+            max_tokens=request.max_tokens,
+            system_instructions=request.system_instruction
         )
 
         if result.success:
