@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Model Availability Checker for VEXIS-CLI-2
+Model Availability Checker for VEXIS-CLI
 Checks if required models are available and provides helpful guidance
 """
 

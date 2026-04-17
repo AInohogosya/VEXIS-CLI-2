@@ -1,5 +1,5 @@
 """
-Structured Logging for VEXIS-CLI-2
+Structured Logging for VEXIS-CLI
 JSON-formatted logs for better observability and log analysis
 """
 

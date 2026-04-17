@@ -1,5 +1,5 @@
 """
-Model Runner for VEXIS-CLI-2 AI Agent System
+Model Runner for VEXIS-CLI AI Agent System
 Multi-Provider Support: 13+ AI providers available
 """
 
@@ -261,9 +261,9 @@ class ModelRunner:
 
     def _get_system_instructions(self, task_type: TaskType) -> str:
         """Get system instructions for better AI behavior"""
-        base_instructions = """# VEXIS-CLI-2 AI Agent System Instructions
+        base_instructions = """# VEXIS-CLI AI Agent System Instructions
 
-You are operating as part of the VEXIS-CLI-2 automation system. Your responses directly impact system execution and user experience.
+You are operating as part of the VEXIS-CLI automation system. Your responses directly impact system execution and user experience.
 
 ## Behavioral Guidelines
 1. **Precision Over Verbosity** - Be exact and concise

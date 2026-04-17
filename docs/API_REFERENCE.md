@@ -2,7 +2,7 @@
 
 ## Overview
 
-This comprehensive API reference covers all public interfaces, classes, methods, and data structures available in VEXIS-CLI-2.
+This comprehensive API reference covers all public interfaces, classes, methods, and data structures available in VEXIS-CLI.
 
 ## Core Components
 
@@ -785,7 +785,7 @@ def mock_ollama_response():
 
 ### Version Compatibility
 
-This API reference covers VEXIS-CLI-1.2 version 1.0.0.
+This API reference covers VEXIS-CLI version 2.0.0.
 
 #### Breaking Changes from 0.x
 

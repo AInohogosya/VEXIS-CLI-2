@@ -2,7 +2,7 @@
 
 ## Overview
 
-This guide covers development setup, coding standards, testing practices, and contribution guidelines for VEXIS-CLI-2.
+This guide covers development setup, coding standards, testing practices, and contribution guidelines for VEXIS-CLI.
 
 ## Development Environment Setup
 
@@ -17,8 +17,8 @@ This guide covers development setup, coding standards, testing practices, and co
 
 ```bash
 # Clone the repository
-git clone https://github.com/AInohogosya/VEXIS-CLI-2.git
-cd VEXIS-CLI-2
+git clone https://github.com/AInohogosya/VEXIS-CLI.git
+cd VEXIS-CLI
 
 # Create virtual environment
 python3 -m venv venv

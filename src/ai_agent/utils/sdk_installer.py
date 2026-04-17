@@ -1,5 +1,5 @@
 """
-Automatic SDK Installer for VEXIS-CLI-2
+Automatic SDK Installer for VEXIS-CLI
 
 Detects missing SDK dependencies and offers to install them automatically.
 Similar to the virtual environment setup, this handles SDK installation gracefully.

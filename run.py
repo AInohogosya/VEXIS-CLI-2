@@ -342,7 +342,7 @@ def bootstrap_environment():
 
 def show_help():
     """Show help message"""
-    print("VEXIS-CLI-2 AI Agent Runner")
+    print("VEXIS-CLI AI Agent Runner")
     print("=" * 50)
     print("Usage: python3 run.py \"your instruction here\"")
     print()
@@ -1770,7 +1770,7 @@ def main():
     
     # Show help
     if "--help" in sys.argv:
-        print("VEXIS-CLI-2 - AI-Powered Command Line Assistant")
+        print("VEXIS-CLI - AI-Powered Command Line Assistant")
         print("=" * 50)
         print("\nUsage: python3 run.py \"your instruction here\"")
         print("\nExamples:")

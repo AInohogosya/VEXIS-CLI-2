@@ -1,8 +1,8 @@
-# VEXIS-CLI-2 Technical Documentation
+# VEXIS-CLI Technical Documentation
 
 ## Overview
 
-This directory contains comprehensive technical documentation for VEXIS-CLI-2, including architecture details, troubleshooting guides, and development resources.
+This directory contains comprehensive technical documentation for VEXIS-CLI, including architecture details, troubleshooting guides, and development resources.
 
 ## Document Structure
 

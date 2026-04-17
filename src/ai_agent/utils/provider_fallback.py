@@ -1,5 +1,5 @@
 """
-Provider Fallback Manager for VEXIS-CLI-2
+Provider Fallback Manager for VEXIS-CLI
 Manages automatic failover between multiple AI providers for high availability
 """
 

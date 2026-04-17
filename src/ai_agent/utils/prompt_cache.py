@@ -1,5 +1,5 @@
 """
-Prompt Cache System for VEXIS-CLI-2
+Prompt Cache System for VEXIS-CLI
 Caches LLM responses to reduce API calls and improve response times
 """
 

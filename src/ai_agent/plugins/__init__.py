@@ -1,5 +1,5 @@
 """
-Plugin System for VEXIS-CLI-2
+Plugin System for VEXIS-CLI
 Extensible architecture using pluggy
 """
 
@@ -12,7 +12,7 @@ hookimpl = pluggy.HookimplMarker("vexis")
 
 class VexisHooks:
     """
-    Hook specifications for VEXIS-CLI-2 plugins
+    Hook specifications for VEXIS-CLI plugins
     """
     
     @hookspec

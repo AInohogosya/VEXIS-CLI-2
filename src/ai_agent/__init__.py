@@ -2,7 +2,7 @@
 AI Agent System - CLI-based automation
 Production-ready implementation with zero-defect policy
 
-Version Note: VEXIS-CLI-2.0 uses semantic versioning (2.0.0)
+Version Note: VEXIS-CLI uses semantic versioning (2.0.0)
 with 5-phase pipeline architecture and 16+ AI provider support.
 """
 

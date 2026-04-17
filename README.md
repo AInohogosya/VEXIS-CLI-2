@@ -1,9 +1,9 @@
 
 <div align="center">
 
-# VEXIS-CLI-2
+# VEXIS-CLI
 
-![VEXIS CLI image](VEXIS-CLI-2.png)
+![VEXIS CLI image](VEXIS-CLI.png)
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge&logo=opensource)](LICENSE)
@@ -22,9 +22,9 @@
 
 ---
 
-## ✨ Why VEXIS-CLI-2?
+## ✨ Why VEXIS-CLI?
 
-**VEXIS-CLI-2** represents a quantum leap in command-line automation, featuring a sophisticated **5-Phase Pipeline Architecture** that delivers unprecedented accuracy and reliability in natural language to command translation.
+**VEXIS-CLI** represents a quantum leap in command-line automation, featuring a sophisticated **5-Phase Pipeline Architecture** that delivers unprecedented accuracy and reliability in natural language to command translation.
 
 🎯 **"Create a backup of my documents folder"** → Intelligent backup with verification  
 🎯 **"Find all Python files with syntax errors"** → Multi-stage code analysis with reporting  
@@ -107,8 +107,8 @@
 
 ### 🎯 **Zero-Configuration Quick Start**
 ```bash
-git clone https://github.com/AInohogosya/VEXIS-CLI-2.git
-cd VEXIS-CLI-2
+git clone https://github.com/AInohogosya/VEXIS-CLI.git
+cd VEXIS-CLI
 python3 run.py "list files"  # Auto-setup and run!
 ```
 
@@ -122,7 +122,7 @@ python3 run.py "list files"  # Auto-setup and run!
 > ⚠️ **Note**: Bugs may occur with certain models or providers. If you encounter issues, please try selecting a different model or provider. We will fix the issue as soon as the cause is identified.
 
 ### 🎨 **First Run Experience**
-VEXIS-CLI-2 features an enhanced provider selection interface with real-time performance metrics:
+VEXIS-CLI features an enhanced provider selection interface with real-time performance metrics:
 
 ![Enhanced Provider Selection](Choose_model.png)
 
@@ -167,7 +167,7 @@ python3 run.py "analyze this screenshot and suggest improvements" --image screen
 ## ⚙️ Configuration
 
 ### 📝 **Advanced Configuration System**
-VEXIS-CLI-2 uses a hierarchical configuration system with validation:
+VEXIS-CLI uses a hierarchical configuration system with validation:
 
 ```yaml
 # API Configuration
@@ -252,7 +252,7 @@ graph TB
 
 ## 🛠️ Development & Contributing
 
-### 🤝 **Contributing to VEXIS-CLI-2**
+### 🤝 **Contributing to VEXIS-CLI**
 We welcome contributions to our advanced AI automation platform:
 
 1. **🐛 Bug Reports**: Use our detailed issue templates for precise reporting
@@ -310,12 +310,12 @@ python3 test_improved_prompts.py --benchmark
 
 ### 💬 **Get Help**
 - 📖 [Comprehensive Documentation](./docs/)
-- 🐛 [Advanced Issues: GitHub Issues](https://github.com/AInohogosya/VEXIS-CLI-2/issues)
-- 💬 [Community Discussions](https://github.com/AInohogosya/VEXIS-CLI-2/discussions)
+- 🐛 [Advanced Issues: GitHub Issues](https://github.com/AInohogosya/VEXIS-CLI/issues)
+- 💬 [Community Discussions](https://github.com/AInohogosya/VEXIS-CLI/discussions)
 - 🏢 [Enterprise Support](mailto:enterprise@vexis-project.com)
 
 ### ⭐ **Show Your Support**
-- **⭐ Star the repository** - Help others discover VEXIS-CLI-2
+- **⭐ Star the repository** - Help others discover VEXIS-CLI
 - **🔄 Fork and contribute** - Build on our 5-phase architecture
 - **📝 Share your use cases** - Inspire the community with innovative applications
 
@@ -325,9 +325,9 @@ python3 test_improved_prompts.py --benchmark
 
 ## 🎉 Experience the Future of Terminal Automation
 
-**VEXIS-CLI-2: Where advanced AI meets precise command execution**
+**VEXIS-CLI: Where advanced AI meets precise command execution**
 
-[🚀 Get Started Now](#installation) • [⭐ Star on GitHub](https://github.com/AInohogosya/VEXIS-CLI-2) • [📖 Explore Documentation](./docs/) • [🏢 Enterprise Support](mailto:AInohogosya@proton.me)
+[🚀 Get Started Now](#installation) • [⭐ Star on GitHub](https://github.com/AInohogosya/VEXIS-CLI) • [📖 Explore Documentation](./docs/) • [🏢 Enterprise Support](mailto:AInohogosya@proton.me)
 
 ---
 

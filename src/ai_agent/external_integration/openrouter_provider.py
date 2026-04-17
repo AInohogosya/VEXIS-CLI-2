@@ -1,5 +1,5 @@
 """
-OpenRouter API Provider for VEXIS-CLI-2 AI Agent
+OpenRouter API Provider for VEXIS-CLI AI Agent
 Handles communication with OpenRouter API - provides access to 300+ AI models
 """
 
@@ -153,8 +153,8 @@ class OpenRouterProvider:
             headers = {
                 "Content-Type": "application/json",
                 "Authorization": f"Bearer {api_key}",
-                "HTTP-Referer": "https://github.com/AInohogosya/VEXIS-CLI-2",
-                "X-Title": "VEXIS-CLI-2 AI Agent"
+                "HTTP-Referer": "https://github.com/AInohogosya/VEXIS-CLI",
+                "X-Title": "VEXIS-CLI AI Agent"
             }
             
             response = requests.post(

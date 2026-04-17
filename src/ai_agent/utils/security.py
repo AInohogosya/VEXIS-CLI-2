@@ -1,5 +1,5 @@
 """
-Security Utilities for VEXIS-CLI-2
+Security Utilities for VEXIS-CLI
 Enhanced security features including sandboxing and sensitive data masking
 Configuration via config.yaml or environment variables
 """

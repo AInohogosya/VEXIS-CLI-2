@@ -1,4 +1,4 @@
-# VEXIS-CLI-2 Detailed User Guide
+# VEXIS-CLI Detailed User Guide
 
 ## Table of Contents
 
@@ -15,9 +15,9 @@
 
 ## Getting Started
 
-### What is VEXIS-CLI-2?
+### What is VEXIS-CLI?
 
-VEXIS-CLI-2 is an intelligent command-line agent that transforms natural language instructions into executable terminal commands. It supports multiple AI providers and offers both local (privacy-first) and cloud-based options.
+VEXIS-CLI is an intelligent command-line agent that transforms natural language instructions into executable terminal commands. It supports multiple AI providers and offers both local (privacy-first) and cloud-based options.
 
 ### Key Features
 
@@ -35,8 +35,8 @@ VEXIS-CLI-2 is an intelligent command-line agent that transforms natural languag
 
 ```bash
 # Clone the repository
-git clone https://github.com/AInohogosya/VEXIS-CLI-2.git
-cd VEXIS-CLI-2
+git clone https://github.com/AInohogosya/VEXIS-CLI.git
+cd VEXIS-CLI
 
 # Run your first command (dependencies auto-installed)
 python3 run.py "list files in current directory"
@@ -46,8 +46,8 @@ python3 run.py "list files in current directory"
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/AInohogosya/VEXIS-CLI-2.git
-cd VEXIS-CLI-2
+git clone https://github.com/AInohogosya/VEXIS-CLI.git
+cd VEXIS-CLI
 
 # 2. Create virtual environment (optional but recommended)
 python3 -m venv venv
@@ -168,7 +168,7 @@ python3 run.py "setup a Python development environment with Django"
    ollama pull deepseek-r1:7b
    ```
 
-4. **Configure VEXIS-CLI-2**:
+4. **Configure VEXIS-CLI**:
    ```yaml
    api:
      preferred_provider: "ollama"
@@ -245,7 +245,7 @@ Similar setup process for:
 
 ### Two-Phase Execution Engine
 
-VEXIS-CLI-2 uses a sophisticated two-phase execution:
+VEXIS-CLI uses a sophisticated two-phase execution:
 
 1. **Command Planning Phase**:
    - Natural language understanding
@@ -387,7 +387,7 @@ python3 run.py "your command" --debug
 ### Q: Is my data secure?
 **A**: Local Ollama models keep data on your machine. Cloud providers send data to their servers.
 
-### Q: How do I update VEXIS-CLI-2?
+### Q: How do I update VEXIS-CLI?
 **A**: `git pull origin main` and reinstall dependencies if needed.
 
 ---
@@ -395,7 +395,7 @@ python3 run.py "your command" --debug
 ## Support & Community
 
 - **Documentation**: [Full docs](./docs/)
-- **Issues**: [GitHub Issues](https://github.com/AInohogosya/VEXIS-CLI-2/issues)
+- **Issues**: [GitHub Issues](https://github.com/AInohogosya/VEXIS-CLI/issues)
 - **Updates**: Check the repository regularly for updates
 
 ---

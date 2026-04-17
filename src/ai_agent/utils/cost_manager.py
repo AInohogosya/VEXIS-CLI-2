@@ -1,5 +1,5 @@
 """
-Cost Manager for VEXIS-CLI-2
+Cost Manager for VEXIS-CLI
 Tracks and manages API usage costs with budget controls
 """
 

@@ -1,5 +1,5 @@
 """
-Simplified Ollama Provider for VEXIS-CLI-2
+Simplified Ollama Provider for VEXIS-CLI
 Direct API calls to Ollama - no magic, no auto-fixes
 """
 
